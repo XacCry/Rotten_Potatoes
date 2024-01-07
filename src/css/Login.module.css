@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px  #2e2609;
+  text-align: center;
+}
+
+.title {
+  color: #e0a502;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label,.errorlabel {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.errorlabel{
+  font-size: .9em;
+  color: red;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px;
+  background-color:  #e0a902;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch .a {
+  color: #e0a902;
+  text-decoration: none;
+}
+.switch .a:hover {
+  color: #d87a00;
+  text-decoration: underline;
+}
+
+.icon {
+  float: left;
+  position: absolute;
+  cursor: pointer;
+  color: #333;
+}
+
+
+.icon:hover{
+  color:rgb(226, 140, 1);
+}

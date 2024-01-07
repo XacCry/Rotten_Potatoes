@@ -1,0 +1,273 @@
+ 
+
+.containeraddandbtn {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    
+    margin-left: 20rem;
+    height: 10vh;
+  }
+  
+  .form {
+    display: flex;
+    align-items: center;
+  }
+    
+    .form .inputbox .input {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      color: #707070;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+  
+    .inputbox .input:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+  
+  .alinkbtn {
+      margin-left: 45px;
+      text-decoration: none;
+      color: #333;
+      padding: 19px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      transition: background-color 0.7s ease;
+  }
+  
+  .alinkbtn:hover {
+      background-color: #333;
+      color: white;
+      border-color: #333;
+  }
+  
+  .showgenres {
+    margin-left: 20rem;
+    padding:  0 4rem;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .showgenres .list {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .deletebtn{
+    padding: 2px;
+    background-color: transparent;
+    border-radius: 10%;
+    transition: all 0.5s;
+
+  }
+  .deletebtn:hover{
+   color: red;
+   border-color: red;
+  }
+  .gobackbtn{
+    padding: 10px;
+    font-size: 1em;
+  }
+  .backicon{
+    color: #333;
+    margin-right: 10px;
+    font-size: 2em;
+  }
+    @media screen and (max-width: 1300px) {
+    .containeraddandbtn {
+        padding: 1rem 0;
+        margin-left: 0;
+    }
+
+    .showgenres {
+        margin-left: 0;
+        padding:  0 1em;
+    }
+
+    .form .inputbox .input {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .alinkbtn {
+        margin-left: 25px;
+        padding: 15px 10px;
+    }
+  }
+  .loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    margin:15px 50px;
+    position: relative;
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+  }
+  
+  @keyframes shadowPulse {
+    33% {
+      background: #FFF;
+      box-shadow: -24px 0 #2c2c2c, 24px 0 #FFF;
+    }
+    66% {
+      background: #2c2c2c;
+      box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    }
+    100% {
+      background: #FFF;
+      box-shadow: -24px 0 #FFF, 24px 0 #2c2c2c;
+    }
+  }
+  .allpage {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.containerpopup {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white; 
+  color: #2c2c2c;
+  min-height: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; 
+}
+  .popupTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .popupline {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+
+  .popupcontent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .popuptext {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .content .popupimg {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .acceptbtn{
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-flex;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    cursor: pointer;
+  }
+
+  .acceptbtn:hover {
+    border-color: #3cb44c;
+    color: #3cb44c;
+    fill: #3cb44c;
+  }
+
+  .acceptbtn:active {
+    border-color: #3cb44c;
+    color: #3cb44c;
+    fill: #3cb44c;
+  }
+  .rejectbtn{
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    cursor: pointer;
+  }
+
+  .rejectbtn:hover {
+    border-color: #e8412c;
+    color:#e8412c;
+    fill: #e8412c;
+  }
+
+  .rejectbtn:active {
+    border-color: #e8412c;
+    color: #e8412c;
+    fill: #e8412c;
+  }
+
+  @media (max-width: 768px) {
+    .containerpopup {
+      width: 300px;
+    }
+    .rejectbtn {
+      min-width: 100px;
+    }
+    .acceptbtn {
+      min-width: 50px;
+    }
+    
+  .content .popupimg {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  }

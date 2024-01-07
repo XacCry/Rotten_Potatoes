@@ -1,0 +1,71 @@
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev {
+  background-image: url("../../public/images/left-arrow.png");
+  background-size: contain;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  /* left: 69px; */
+}
+.swiper-button-next {
+  background-image: url("../../public/images/right-arrow.png");
+  background-size: contain;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  /* right: 69px; */
+}
+
+.swiper-button-prev:hover {
+    background-image: url("../../public/images/left-arrow-hover.png");
+  }
+  .swiper-button-next:hover {
+    background-image: url("../../public/images/right-arrow-hover.png");
+
+  }
+  /* .swiper-horizontal > .swiper-scrollbar{
+    display: none;
+  } */
+
+
+  @media (max-width:768px) {
+    .swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+/* .swiper-horizontal > .swiper-scrollbar{
+    display: flex;
+} */
+
+  }
+  .swiper-slide{
+    width: 200px;
+   }
+   /* styles.css */
+.searchInput {
+  width: 80%;
+  /* add more styles as needed */
+}
+.search>.results{
+  width: 80% !important;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+h1,h2,h3,h4,h5 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif !important
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 80vh;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    filter: brightness(30%);
+}
+
+.text-container {
+    /* text-align: center; */
+    margin: 0 5%;
+    width: 40%;
+    color: white;
+    z-index: 1;
+}
+
+.MovieRecom {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Title {
+  font-size: 2em;
+    font-weight: bold;
+    /* margin-left: 1em; */
+    margin-bottom: 10px;
+}
+.icon{
+    margin-right: 10px;
+}
+.Duration {
+   font-size: 1.2em;
+   margin-left: .5em;
+    margin-bottom: 10px;
+}
+
+.MovieInfo {
+  font-size: 16px;
+margin-bottom: 20px;
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 5; 
+-webkit-box-orient: vertical;
+text-overflow: ellipsis;
+}
+
+.whatmorebtn{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.whatmorebtn {
+  background: linear-gradient(to bottom right, #d18e2a, #f0c127);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.whatmorebtn:not([disabled]):focus {
+  color: #FFFFFF;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(243, 174, 25, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.whatmorebtn:not([disabled]):hover {
+  color: #FFFFFF;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(243, 174, 25, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+@media screen and (max-width:1280px) {
+  .text-container {
+    width: 80%;
+  
+}
+}
+@media screen and (max-width:768px) {
+  .text-container {
+    width: 100%;
+}
+.MovieRecom {
+    font-size: 1.8em;
+    
+
+}
+
+.Title {
+  font-size: 1.4em;
+ 
+}
+
+.Duration {
+   font-size: 1.2em;
+
+  
+}
+
+.MovieInfo {
+  font-size: 0.8em; 
+
+-webkit-line-clamp: 3;
+
+
+}
+}

@@ -1,0 +1,372 @@
+footer
+{
+    margin-top: 200px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit';font-size: 15px;
+}
+.main_comment{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+}
+
+.main_theaters
+{
+    width: 100%;
+}
+.grid_theaters_show
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+}
+.grid_movie_comment{
+    display: grid;
+    background-color: #E9E9EA;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.block_movie_comment{
+
+    border: 1px solid #a0a0a9;
+    text-align: center;
+}
+
+.block_movie_comment.active{
+    background-color: rgb(255, 255, 255);
+
+
+}
+.grid_img
+{
+
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.grid_img_name{
+    display: grid;
+    grid-template-columns: 20% 80% ;
+     gap: 20px;
+     padding-top: 20px;
+}
+.rate_movie{
+    text-align: center;
+    background-color: #E9E9EA;
+    border-radius: 30px;
+}
+.container_movie{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.rate_and_review_widget__textbox_textarea {
+border: 1px solid #f8f9f9;
+border-radius: 4px;
+background-color: #f8f9f9;
+width: 60%;
+max-width: 100%;
+font-size: 1rem;
+padding: 25px;
+}
+
+.comment_rate_movie{
+padding: 20px;
+text-align: center;
+background-color: #E9E9EA;
+}
+.comment_movie{
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 10px;
+column-gap:80px;
+}
+
+.comment_block{
+display: block;
+text-align: center;
+margin-bottom: 100px;
+
+}
+.border_comment{
+border: 1px solid black;
+padding: 20px;
+}
+.comment_block img{
+margin-top: 20px;
+}
+.img_show_top
+{
+
+height: 100%;
+width: 100%;
+
+}
+.margin_top30{
+
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.alinkbtn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: background-color 0.7s ease;
+    background-color: #333;
+}
+
+.alinkbtn:hover {
+    background-color: white;
+    color: #333;
+    border-color: #333;
+}
+
+
+.vl_s {
+    border-left: 3px solid #e6b82c;
+    padding-left: 10px;
+}
+
+
+.font_we{
+    font-weight: bold;
+    font-size: 17px;
+    color:rgb(100, 99, 99);
+}
+.container_movie_wiper
+{
+    max-width: 800px;
+}
+
+
+
+
+
+@media  screen and (max-width: 1086px) {
+.main_comment{
+    display: grid;
+    grid-template-columns:1fr;
+}
+.main_theaters{
+    display: none;
+}
+.comment_movie{
+    grid-template-columns: 1fr;
+}
+.grid_img_name{
+    grid-template-columns: 1fr;
+     padding-top: 20px;
+}
+.img_show_top
+    {
+        display: none;
+    }
+    .container_movie{
+    display: block;
+    width: 90%;
+    padding: 5px;
+}
+
+}
+.slidecontainer {
+    text-align: start;
+    width: 100%;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+  
+  .scrollmenu {
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .imgnewmovietop {
+    padding: 20px;
+    width: 200px;
+  }
+  .textaligncenter{
+    text-align: center;
+  }
+  
+  .allpage {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.containerpopup {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white; 
+  color: #2c2c2c;
+  min-height: 400px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; 
+}
+  .popupTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .popupline {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+
+  .popupcontent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .popuptext {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .containerpopup .popupimg {
+    /* max-width: 200px; */
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .acceptbtn{
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-flex;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    cursor: pointer;
+  }
+
+  .acceptbtn:hover {
+    border-color: #3cb44c;
+    color: #3cb44c;
+    fill: #3cb44c;
+  }
+
+  .acceptbtn:active {
+    border-color: #3cb44c;
+    color: #3cb44c;
+    fill: #3cb44c;
+  }
+  .rejectbtn{
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    cursor: pointer;
+  }
+
+  .rejectbtn:hover {
+    border-color: #e8412c;
+    color:#e8412c;
+    fill: #e8412c;
+  }
+
+  .rejectbtn:active {
+    border-color: #e8412c;
+    color: #e8412c;
+    fill: #e8412c;
+  }
+
+  @media (max-width: 768px) {
+    .containerpopup {
+      width: 300px;
+      min-height: 600px;
+    }
+    .rejectbtn {
+      min-width: 100px;
+    }
+    .acceptbtn {
+      min-width: 100px;
+    }
+    
+  .content .popupimg {
+    width: 100px;
+    height: 150px;
+
+  }
+  }

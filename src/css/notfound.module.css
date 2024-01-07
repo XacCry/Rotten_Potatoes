@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@700&display=swap');
+.container{
+  display: flex;
+  align-items:center ;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  font-family: 'Sometype Mono', monospace;
+}
+.containertext{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.img{
+  width: 700px;
+}
+.Title{
+  color: #2c2c2c;
+  font-size: 15em;
+}
+.description{
+  color: #565656;
+  font-size: 5em;
+}
+
+  .goback {
+    margin-top: 10px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(153, 5, 5);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    /* margin: 0; */
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) 10em;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.goback:hover,
+.goback:focus {
+border-color: rgba(221, 33, 33, 0.8);
+box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+color: rgba(0, 0, 0, 0.65);
+}
+
+.goback:hover {
+transform: translateY(-1px);
+}
+
+.goback:active {
+background-color: #F0F0F1;
+border-color: rgba(0, 0, 0, 0.15);
+box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+color: rgba(0, 0, 0, 0.65);
+transform: translateY(0);
+}
+@media screen and (max-width:1280px) {
+.img{
+  width: 400px;
+}
+.Title{
+  font-size: 8em;
+}
+.description{
+  font-size: 2.5em;
+}
+.goback {
+  padding: calc(.875rem - 1px) 5em;
+}
+}
+@media screen and (max-width:768px) {
+.img{
+  width: 200px;
+}
+.Title{
+  font-size: 5em;
+}
+.description{
+  font-size: 100%;
+}
+.goback {
+  padding: calc(.875rem - 1px) 1em;
+}
+}

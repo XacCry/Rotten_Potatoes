@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+
+
+.container{
+    padding: 2em;
+}
+.warpper {
+    display: flex;
+    /* align-items: center;
+justify-content: center; */
+    flex-wrap: wrap;
+
+}
+.TopText{
+    color:#2c2c2c;
+}
+.content {
+    
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.content .img {
+    width: 162px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    transition: filter 1s ease;
+}
+
+.content .img:hover {
+    filter: brightness(70%);
+}
+
+.content .contenttitle ,.content .contentscore{
+    
+    margin: 1em .5em;
+}
+
+.content .contentinfo {
+color: #606263;
+max-width: 162px;
+font-size: 1em;
+
+
+    color: #606263;
+}
+
+
+.listsearch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.selectbox {
+    height: 50px;
+    width: 400px;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.selectbox .dropdown:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.selectbox .dropdown {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+    font-family: 'Mitr', sans-serif !important
+}
+.content:hover .contentinfo{
+    color: rgba(225,165,67,1);
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        margin-left: 0;
+    }
+
+    .selectbox {
+        display: block;
+    }
+
+    .selectbox .dropdown {
+        width: 100%;
+    }
+
+    .alinkbtn {
+        margin: 20px 0;
+        display: block;
+    }
+}

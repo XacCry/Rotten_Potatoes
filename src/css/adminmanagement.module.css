@@ -1,0 +1,386 @@
+
+.container {
+    margin-left: 22rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.warpper {
+    display: flex;
+    /* align-items: center;
+      justify-content: center; */
+    flex-wrap: wrap;
+
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.content .img {
+    width: 162px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    transition: filter 1s ease;
+}
+
+.content .img:hover {
+    filter: brightness(70%);
+}
+
+.content .contenttitle,.content .contentscore {
+    margin: 1em 0;
+    color: #606263;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.contenttitle:hover{
+    color: #dbbc08;
+    text-decoration: underline;
+}
+.content .contentinfo {
+    font-size: 1em;
+    color: #606263;
+}
+
+.contentbtnedit {
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 0 1em;
+    font-size: 1em;
+    border: 1.5px solid #606263;
+    cursor: pointer;
+    color: #606263;
+    transition: background-color 0.7s ease;
+}
+
+.contentbtndelete {
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 0 1em;
+    font-size: 1em;
+    border: 1.5px solid #606263;
+    cursor: pointer;
+    color: #606263;
+    background-color: transparent;
+    transition: background-color 0.7s ease;
+}
+.contentbtndelete1 {
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-size: 1em;
+    border: 1.5px solid #606263;
+    cursor: pointer;
+    color: #606263;
+    transition: background-color 0.7s ease;
+    display: block;
+    
+}
+.contentbtnedit:hover {
+    background-color: rgb(47, 116, 245);
+    color: white;
+    border-color: rgb(47, 116, 245);
+}
+
+.contentbtndelete:hover {
+    background-color: rgb(114, 25, 25);
+    color: white;
+    border-color: rgb(114, 25, 25);
+}
+.contentbtndelete1:hover {
+    background-color: rgb(114, 25, 25);
+    color: white;
+    border-color: rgb(114, 25, 25);
+}
+
+.selectbox .dropdown {
+    height: 50px;
+    width: 50%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.selectbox .dropdown:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.selectbox {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button_next{
+
+    padding: 10px 20px;
+    background: rgb(225,165,67);
+    border: none;
+    margin:5px 10px ;
+}
+.activePage{
+
+    border: black solid 2px;
+}
+
+.alinkbtn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: background-color 0.7s ease;
+}
+
+.alinkbtn:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+.contentinfoActor{
+    display: flex;
+    flex-flow: column;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        margin-left: 0;
+    }
+    .selectbox {
+        display: block;
+    }
+    .selectbox .dropdown{
+      width: 100%;
+    }
+    .alinkbtn{
+        margin: 20px 0;
+      display: block;
+    }
+      }
+
+      .warpper_comment {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }      
+    
+    .bordercomment {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+    @media screen and (max-width: 1086px) {
+
+        .warpper_comment {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media screen and (max-width: 768px) {
+
+        .warpper_comment {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media screen and (max-width: 468px) {
+
+        .warpper_comment {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    p>strong{
+
+        font-size: 15px;
+    }
+    .loader {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: block;
+        margin:15px 50px;
+        position: relative;
+        background: #FFF;
+        box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+        box-sizing: border-box;
+        animation: shadowPulse 2s linear infinite;
+      }
+      
+      @keyframes shadowPulse {
+        33% {
+          background: #FFF;
+          box-shadow: -24px 0 #2c2c2c, 24px 0 #FFF;
+        }
+        66% {
+          background: #2c2c2c;
+          box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+        }
+        100% {
+          background: #FFF;
+          box-shadow: -24px 0 #FFF, 24px 0 #2c2c2c;
+        }
+      }
+
+      .allpage {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% transparency */
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .containerpopup {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      background-color: white; 
+      color: #2c2c2c;
+      min-height: 400px;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999; 
+    }
+      .popupTitle {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    
+      .popupline {
+        height: 2px;
+        background-color: black;
+        margin-bottom: 20px;
+      }
+    
+      .popupcontent {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+    
+      .popuptext {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      .containerpopup .popupimg {
+        /* max-width: 200px; */
+        width: 150px;
+        height: 200px;
+        margin: 0 auto;
+      }
+    
+      .buttonsContainer {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+    
+      .acceptbtn{
+        align-items: center;
+        background-color: #fff;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        color: #000;
+        display: inline-flex;
+        fill: #000;
+        font-size: 16px;
+        font-weight: 600;
+        height: 48px;
+        justify-content: center;
+        min-width: 140px;
+        outline: 0;
+        padding: 0 17px;
+        cursor: pointer;
+      }
+    
+      .acceptbtn:hover {
+        border-color: #3cb44c;
+        color: #3cb44c;
+        fill: #3cb44c;
+      }
+    
+      .acceptbtn:active {
+        border-color: #3cb44c;
+        color: #3cb44c;
+        fill: #3cb44c;
+      }
+      .rejectbtn{
+        align-items: center;
+        background-color: #fff;
+        border: 2px solid #000;
+        color: #000;
+        fill: #000;
+        font-size: 16px;
+        font-weight: 600;
+        height: 48px;
+        justify-content: center;
+        min-width: 140px;
+        outline: 0;
+        padding: 0 17px;
+        cursor: pointer;
+      }
+    
+      .rejectbtn:hover {
+        border-color: #e8412c;
+        color:#e8412c;
+        fill: #e8412c;
+      }
+    
+      .rejectbtn:active {
+        border-color: #e8412c;
+        color: #e8412c;
+        fill: #e8412c;
+      }
+    
+      @media (max-width: 768px) {
+        .containerpopup {
+          width: 300px;
+          min-height: 600px;
+        }
+        .rejectbtn {
+          min-width: 100px;
+        }
+        .acceptbtn {
+          min-width: 50px;
+        }
+        
+      .content .popupimg {
+        width: 100px;
+        height: 150px;
+
+      }
+      }

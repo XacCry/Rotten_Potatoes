@@ -1,0 +1,55 @@
+.footer{
+    background-color: #2C2C2C;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    padding: 50px 20px;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.about{
+    flex-grow: 1;
+    flex-basis:100%
+
+}
+.services{
+    flex-grow: 1;
+    flex-basis:100%
+}
+.contact{
+    flex-grow: 1;
+    flex-basis:100%
+}
+.container .title{
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+.services .list,.contact .list{
+    list-style-type: none;
+    line-height: 1.6;
+}
+.services .alink{
+        color: white;
+        text-decoration: none;
+}
+.services .alink:hover{
+    color: #e1a543;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px) {
+
+    .container{
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+    .services , .contact,.about{
+       text-align: center;
+    }
+
+}
